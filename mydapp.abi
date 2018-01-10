@@ -1,0 +1,29 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "key_value",
+      "base": "",
+      "fields": {
+        "key": "string",
+        "lastmod": "time"
+      }
+    }
+  ],
+  "actions": [{
+      "action_name": "change",
+      "type": "key_value"
+    }
+  ],
+  "tables": [{
+      "table_name": "change",
+      "index_type": "str",
+      "key_names": [
+        "key"
+      ],
+      "key_types": [
+        "string"
+      ],
+      "type": "key_value"
+    }
+  ]
+}
