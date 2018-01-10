@@ -7,11 +7,11 @@
 namespace eosio { namespace raw {
    template<typename Stream> inline void pack( Stream& s, const key_value& value ) {
       raw::pack(s, value.key);
-      raw::pack(s, value.lastmod);
+      raw::pack(s, value.value);
    }
    template<typename Stream> inline void unpack( Stream& s, key_value& value ) {
       raw::unpack(s, value.key);
-      raw::unpack(s, value.lastmod);
+      raw::unpack(s, value.value);
    }
 } }
 
@@ -30,7 +30,7 @@ namespace eosio {
    }
    void dump(const key_value& value, int tab=0) {
       print_ident(tab);print("key:[");prints_l(value.key.get_data(), value.key.get_size());print("]\n");
-      print_ident(tab);print("lastmod:[");printi(value.lastmod);print("]\n");
+      print_ident(tab);print("value:[");printi(value.value);print("]\n");
    }
    template<>
    key_value current_message<key_value>() {

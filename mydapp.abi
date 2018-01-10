@@ -5,7 +5,7 @@
       "base": "",
       "fields": {
         "key": "string",
-        "lastmod": "time"
+        "value": "time"
       }
     }
   ],
@@ -15,7 +15,7 @@
     }
   ],
   "tables": [{
-      "table_name": "change",
+      "table_name": "keyvalue",
       "index_type": "str",
       "key_names": [
         "key"

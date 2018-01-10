@@ -6,5 +6,5 @@
 */
 struct key_value {
    eosio::string key;
-   time lastmod;
+   time value;
 };
